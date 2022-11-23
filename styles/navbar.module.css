@@ -1,0 +1,310 @@
+@import url(//db.onlinewebfonts.com/c/7499e6db8c3194992131b7d2309f992a?family=GT+America+Expanded);
+@font-face {font-family: "GT America Expanded"; src: url("//db.onlinewebfonts.com/t/7499e6db8c3194992131b7d2309f992a.eot"); src: url("//db.onlinewebfonts.com/t/7499e6db8c3194992131b7d2309f992a.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/7499e6db8c3194992131b7d2309f992a.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/7499e6db8c3194992131b7d2309f992a.woff") format("woff"), url("//db.onlinewebfonts.com/t/7499e6db8c3194992131b7d2309f992a.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/7499e6db8c3194992131b7d2309f992a.svg#GT America Expanded") format("svg"); }
+.sideContainer {
+    position: fixed;
+    z-index: 3;
+    background-color: #fff;
+    width: 9em;
+    right: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 17em;
+    padding-right: .9em;
+    border-left: 1.5px solid #075146;
+    overflow: hidden;
+}
+.icon {
+    display: flex;
+    gap: 8px;
+    margin-top: 3em;
+    cursor: pointer;
+}
+.iconLeft{
+    background-color: #075146;
+    width: 1.5px;
+    height: 15px;
+    transition: .25s;
+}
+.iconRight {
+    background-color: #075146;
+    width: 2.5px;
+    height: 26px;
+    transition: .25s;
+}
+.category {
+    margin-top: 5px;
+    display: flex;
+    gap: 3.9em;
+    transform: rotate(90deg);
+    color: #075146;
+    font-family: "GT America Expanded";
+    font-weight: 400;
+    letter-spacing: 0.15em;
+    font-size: calc(11.8808784px + 2.1191216 * ((100vw - 320px) / 1120));
+    cursor: pointer;
+    transition: .15s;
+}
+.lang {
+    color: #075146;
+    font-family: "GT America Expanded";
+    font-weight: 400;
+    letter-spacing: 0.15em;
+    font-size: calc(11.8808784px + 2.1191216 * ((100vw - 320px) / 1120));
+    margin-top: -.5em;
+    cursor: pointer;
+    transition: .15s;
+}
+.closeIconLeft {
+    background-color: #075146;
+    width: 2.5px;
+    height: 26px;
+    transform: rotate(-45deg);
+    margin-right: -5.25px;
+    transition: .25s;
+}
+.closeIconRight {
+    background-color: #075146;
+    width: 2.5px;
+    height: 26px;
+    transform: rotate(45deg);
+    margin-left: -5.25px;
+    transition: .25s;
+}
+.closeCategory {
+    margin-top: 5px;
+    display: flex;
+    gap: 3.9em;
+    transform: rotate(90deg);
+    color: #075146;
+    font-family: "GT America Expanded";
+    font-weight: 400;
+    letter-spacing: 0.15em;
+    font-size: calc(11.8808784px + 2.1191216 * ((100vw - 320px) / 1120));
+    cursor: pointer;
+    margin-left: -4em;
+    opacity: 0;
+    transition: .35s all;
+}
+.closeLang {
+    color: #075146;
+    font-family: "GT America Expanded";
+    font-weight: 400;
+    letter-spacing: 0.15em;
+    font-size: calc(11.8808784px + 2.1191216 * ((100vw - 320px) / 1120));
+    margin-top: -.5em;
+    cursor: pointer;
+    margin-left: -4em;
+    opacity: 0;
+    transition: .35s all;
+}
+.closeHidden {
+    color: #075146;
+    font-family: "GT America Expanded";
+    font-weight: 400;
+    letter-spacing: 0.15em;
+    font-size: calc(11.8808784px + 2.1191216 * ((100vw - 320px) / 1120));
+    writing-mode: vertical-lr;
+    position: absolute;
+    top:  calc(12.8808784em + 2.1191216 * ((100vw - 320px) / 1120));
+    right: calc(20.8808784px + 2.1191216 * ((100vw - 320px) / 1120));
+    opacity: 0;
+    transition: .1s;
+}
+.closeVisible {
+    color: #075146;
+    font-family: "GT America Expanded";
+    font-weight: 400;
+    letter-spacing: 0.15em;
+    font-size: calc(11.8808784px + 2.1191216 * ((100vw - 320px) / 1120));
+    writing-mode: vertical-lr;
+    position: absolute;
+    top:  calc(12.8808784em + 2.1191216 * ((100vw - 320px) / 1120));
+    right: calc(70.8808784px + 2.1191216 * ((100vw - 320px) / 1120));
+    opacity: 1;
+    transition: .35s .7s all;
+}
+@media (max-width: 37.45rem) {
+    .category, .lang, .closeVisible, .closeHidden, .closeCategory, .closeLang {
+        display: none;
+    }
+    .sideContainer {
+        width: 4em;
+        height: 4em;
+        border-bottom:  1.5px solid #075146;
+        padding-right: 0;
+    }
+    .icon {
+        display: flex;
+        transform: rotate(-90deg);
+        gap: 8px;
+        margin-top: 0;
+    }
+    .iconLeft{
+        background-color: #075146;
+        width: 2.5px;
+        height: 15px;
+    }
+    .iconRight {
+        background-color: #075146;
+        width: 1.5px;
+        height: 26px;
+    }
+}
+@import url(//db.onlinewebfonts.com/c/76cad44852ba93f820a16d446f80c5e2?family=GT+America+Light);
+@font-face {font-family: "GT America Light"; src: url("//db.onlinewebfonts.com/t/76cad44852ba93f820a16d446f80c5e2.eot"); src: url("//db.onlinewebfonts.com/t/76cad44852ba93f820a16d446f80c5e2.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/76cad44852ba93f820a16d446f80c5e2.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/76cad44852ba93f820a16d446f80c5e2.woff") format("woff"), url("//db.onlinewebfonts.com/t/76cad44852ba93f820a16d446f80c5e2.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/76cad44852ba93f820a16d446f80c5e2.svg#GT America Light") format("svg"); }
+.mainContainer {
+    position: fixed;
+    z-index: 2;
+    background-color: #fff;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.mainCategory {
+    text-align: center;
+    color: #075146;
+    font-family: "GT America Light";
+    font-size: calc(30px + 40 * ((100vw - 320px) / 1120));
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    line-height: 1.5;
+    cursor: pointer;
+    animation: 1.3s anim-lineLeft ease-out;
+}
+@keyframes anim-lineLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(80%);
+    }
+    20% {
+      opacity: .5;
+    }
+    50% {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+  }
+.mainCategory :nth-child(n) {
+    transition: .3s all;
+}
+.mainCategory :hover:nth-child(n)  {
+    letter-spacing: 0;
+    margin-left: -1em;
+    transition: .3s all;
+}
+.arrow {
+    display: flex;
+    flex-direction: column;
+    margin-left: 7em;
+    margin-top: -.9em;
+    margin-bottom: .4em;
+    animation: .5s anim-lineLeft-arrow ease-out;
+}
+.arrowTop {
+    width: 32px;
+    height: 2px;
+    background-color: #075146;
+    transform: rotate(45deg);
+    margin-left: calc(14px + 40 * ((100vw - 320px) / 1120));
+    margin-bottom: 9px;
+    animation: .25s anim-lineLeft-arrow-top-bottom ease-out;
+}
+.arrowMiddle {
+    height: 2px;
+    background-color: #075146;
+    width: calc(40px + 40 * ((100vw - 320px) / 1120));
+    animation: .25s anim-lineLeft-arrow-middle ease-out;
+}
+.arrowBottom {
+    width: 32px;
+    height: 2px;
+    background-color: #075146;
+    transform: rotate(-45deg);
+    margin-left: calc(14px + 40 * ((100vw - 320px) / 1120));
+    margin-top: 9px;
+    animation: .25s anim-lineLeft-arrow-top-bottom ease-out;
+}
+@keyframes anim-lineLeft-arrow {
+    0% {
+      opacity: 0;
+      transform: translateX(10%);
+    }
+    20% {
+      opacity: .5;
+    }
+    50% {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+  }
+  @keyframes anim-lineLeft-arrow-middle {
+    0% {
+        width: calc(7px + 40 * ((100vw - 320px) / 1120));
+    }
+    20% {
+        width: calc(14px + 40 * ((100vw - 320px) / 1120));
+    }
+    40% {
+        width: calc(21px + 40 * ((100vw - 320px) / 1120));
+    }
+    60% {
+        width: calc(28px + 40 * ((100vw - 320px) / 1120));
+    }
+    80% {
+        width: calc(35px + 40 * ((100vw - 320px) / 1120));
+    }
+    100% {
+        width: calc(40px + 40 * ((100vw - 320px) / 1120));
+    }
+  }
+  @keyframes anim-lineLeft-arrow-top-bottom {
+    0% {
+      width: 0;
+    }
+    25% {
+        width: 8px;
+    }
+    50% {
+      width: 16px;
+    }
+    75% {
+        width: 24px;
+    }
+    100% {
+      width: 32px;
+    }
+  }
+.logo {
+    position: fixed;
+    z-index: 3;
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    top: 5%;
+    left: 5%;
+    cursor: pointer;
+    transition: .25s;
+}
+.logo:hover {
+    transform: scale(1);
+    border: 5px solid #075146;
+}
+@media (min-width: 70rem) {
+    .fr {
+        display: none;
+    }
+}
