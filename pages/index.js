@@ -16,7 +16,7 @@ export default function Home() {
       >
         <source src="../videos/library.mp4" type="video/mp4"></source>
       </video>
-      <div className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] font text-[4em] text-center font-bold">
+      <div className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] font text-[4em] text-center font-bold text-white">
         <div>WELCOME</div>
         <div>TO</div>
         <div>BLOGTOR</div>

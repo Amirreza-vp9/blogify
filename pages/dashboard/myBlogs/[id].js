@@ -153,14 +153,7 @@ const SingleBlogPanel = () => {
                 wordBreak: "break-word",
               }}
             >
-              {
-                blog.content
-                  .split("<p>")
-                  .toString()
-                  .split("</p>")
-                  .toString()
-                  .split(",")[1]
-              }
+              {blog.content.replace(/<[^>]+>/g, "")}
             </Typography>
           </Box>
           <Box sx={{ display: "flex", gap: "1em", ml: "auto" }}>
